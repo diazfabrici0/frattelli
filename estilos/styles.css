@@ -1,0 +1,285 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'miFuente';
+    src: url(/fuente/HWYGNRRW.TTF) format('truetype');
+}
+
+body{
+    font-family: 'miFuente', sans-serif;
+    background-image: url(/img/background.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: center center;
+    font-size: 20px;
+}
+
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.in-flex{
+    flex: 1;
+    min-width: 250px;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.in-flex div{
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+#fratelliLogo{
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+#fratelliLogo img{
+    position: relative;
+    width: 150px;
+    bottom: 0px;
+}
+
+#imagenFratelli{
+    max-width: 100%; /* Ajusta el ancho máximo para que sea responsive */
+    height: auto; 
+}
+
+#imagen{
+    background: none;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+
+}
+
+#imagen img{
+    position: relative;
+    width: 100px;
+    top: 0;
+}
+
+#lupulo{
+    max-width: 100%; /* Ajusta el ancho máximo para que sea responsive */
+    height: auto; 
+    z-index: 1;
+}
+.footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 999;
+}
+
+#boton{
+    z-index: 999;
+    position: fixed;
+}
+
+.btn-menu{
+    position: absolute;
+    top:10px;
+    left: 20px;
+    z-index: 999;
+}
+
+
+.btn-menu button{
+    background: none;
+    border: none;
+    z-index: 999;
+}
+
+.container .btn-menu{
+    float: left;
+    line-height:100px;
+    z-index: 999;
+}
+
+.container .btn-menu label{
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.container .menu a:hover{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+}
+
+#btn-menu{
+    display: none;
+    z-index: 999;
+}
+.container-menu{
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 3;
+}
+
+
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #91440da7;
+    height: 110vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+    transform: translateX(0%);
+}
+
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #ffffff;
+    background: #91440D;
+}
+
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#cerrar{
+    width: 20px;
+    padding: 5px;
+} 
+
+#productos{
+    display: block;
+    text-align: left;
+    width: 77%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#lista{
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+#lista ul{
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+    margin-left: 20px;
+}
+
+#lista li {
+    margin: 0;
+    padding: 5px;
+}
+
+#secciones{
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+#nombre {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#precio {
+    background-color: rgba(0, 0, 0, 0);
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#borde{
+    border-bottom: 1px solid #ffffff; /* Color y grosor de la línea */
+    margin-bottom: 20px; /* Espacio después de la línea */
+    padding: 0;
+    margin-top: 15px;
+}
