@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fratelli Carta</title>
+        <link rel="stylesheet" type="text/css" href="/estilos/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    </head>
+    <body>
+        <div class="container">
+            <div class="btn-menu">
+                <button id="boton" onclick="abrirMenu()"><label for="btn-menu">☰</label></button> 
+            </div>
+        </div>
+        <header class="header">
+            <div id="imagen">
+                <div>
+                    <img id="lupulo" src="/img/lupulo.png">
+                </div>
+            </div>
+		    
+	    </header>
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="/index.html">Todo</a>
+                    <a href="/secciones/pintas.html">Pintas</a>
+                    <a href="/secciones/tragos.html">Tragos</a>
+                    <a href="#">De Autor</a>
+                    <a href="#">Sin alcohol</a>
+                    <a href="#">Comida</a>
+                </nav>
+                <button  onclick="abrirMenu()"><label for="btn-menu"><img id="cerrar" src="/img/Cerrar.png"></label></button>
+            </div>
+        </div>
+        <section class="home">
+            <div class="in-flex">
+                <div id="productos">
+                    <h2>Pintas</h2>
+                    <div id="lista">
+                        <ul>
+                            <h4>Politburo</h4>
+                            <li>
+                                <div id="nombre">Ipa</div>
+                                <div id="precio">$00,00</div>
+                            </li>
+                            <li>
+                                <div id="nombre">Doble ipa</div>
+                                <div id="precio">$00,00</div>
+                            </li>
+                            <li>
+                                <div id="nombre">Triple ipa</div>
+                                <div id="precio">$00,00</div>
+                            </li>
+                            <li>
+                                <div id="nombre">Ipa Bakunin</div>
+                                <div id="precio">$00,00</div>
+                            </li>
+                            <li>
+                                <div id="nombre">Irish red</div>
+                                <div id="precio">$00,00</div>
+                            </li>
+                            <li>
+                                <div id="nombre">Frambuesa</div>
+                                <div id="precio">$00,00</div>
+                            </li>
+                            <li>
+                                <div id="nombre">Stout</div>
+                                <div id="precio">$00,00</div>
+                            </li>
+                            <div id="borde">
+                            </div>
+                            <h4>Crafter</h4>
+                            <li>
+                                <div id="nombre">Og kush</div>
+                                <div id="precio">$00,00</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <footer class="footer" id="lugarFooter">
+                    <div id="fratelliLogo">
+                        <img id="imagenFratelli" src="/img/logo fratelli.png">
+                    </div>
+                </footer>
+            </body>
+            <script>
+                function abrirMenu(){
+                    let checkbox = document.getElementById('btn-menu');
+                    let label = document.querySelector('label[for="btn-menu"]');
+                    let logo = document.getElementById('fratelliLogo');
+        
+                    if(!checkbox.checked){
+                        label.style.opacity = '0';
+                        logo.style.opacity = '0.5';
+                        document.body.style.overflow = "hidden";
+        
+                    }else{
+                        label.style.opacity = '1'
+                        logo.style.opacity = '1'
+                        document.body.style.overflow = "auto";
+        
+                    }
+        
+                    console.log('funca');
+                }
+            </script>
+        </html>
