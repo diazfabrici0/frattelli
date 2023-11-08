@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: 'miFuente';
-    src: url(/fuente/HWYGNRRW.TTF) format('truetype');
+    src: url(../fuente/HWYGNRRW.TTF) format('truetype');
 }
 
 body{
     font-family: 'miFuente', sans-serif;
-    background-image: url(/img/background.JPG);
+    background-image: url(../img/background.JPG);
     background-size: cover;
     background-attachment:fixed;
     background-position: center center;
