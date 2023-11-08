@@ -263,11 +263,19 @@ body{
     margin-right: 20px;
 }
 
+#descripcion{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    margin: 0;
+    flex: 7;
+    font-size: 17px;
+}
+
 #precio {
     background-color: rgba(0, 0, 0, 0);
     flex-shrink: 0;
     padding: 0;
-    margin: 0;
+    margin: 5px;
 }
 
 li {

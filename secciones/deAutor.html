@@ -21,6 +21,9 @@
             </div>
 		    
 	    </header>
+
+
+
         <input type="checkbox" id="btn-menu">
         <div class="container-menu">
             <div class="cont-menu">
@@ -30,7 +33,7 @@
                     <a href="/secciones/tragos.html">Tragos</a>
                     <a href="/secciones/deAutor.html">De Autor</a>
                     <a href="/secciones/sinAlcohol.html">Sin alcohol</a>
-                    <!---<a href="#">Comida</a>--->
+                    <!--<a href="#">Comida</a>--->
                 </nav>
                 <button  onclick="abrirMenu()"><label for="btn-menu"><img id="cerrar" src="/img/Cerrar.png"></label></button>
             </div>
@@ -38,73 +41,72 @@
         <section class="home">
             <div class="in-flex">
                 <div id="productos">
-                    <h2>Pintas</h2>
+                    <h2>De Autor</h2>
                     <div id="lista">
                         <ul>
-                            <h4>Politburo</h4>
                             <li>
-                                <div id="nombre">Ipa</div>
-                                <div id="precio">$1200,00</div>
+                                <div id="nombre">Vittoria</div>
+                                <div id="precio">$2000,00</div>
                             </li>
                             <li>
-                                <div id="nombre">Doble ipa</div>
-                                <div id="precio">$1200,00</div>
+                                <div id="descripcion">(licor de naranja, vodka frutos rojos almibar casero, speed)</div>
                             </li>
                             <li>
-                                <div id="nombre">Triple ipa</div>
-                                <div id="precio">$1200,00</div>
+                                <div id="nombre">Sant'Elpidio Morico</div>
+                                <div id="precio">$2000,00</div>
                             </li>
                             <li>
-                                <div id="nombre">Ipa Bakunin</div>
-                                <div id="precio">$1200,00</div>
+                                <div id="nombre">Lady Di</div>
+                                <div id="precio">$2500,00</div>
                             </li>
                             <li>
-                                <div id="nombre">Irish red</div>
-                                <div id="precio">$1200,00</div>
+                                <div id="descripcion">(frutillas, jugo de naranja, almibar casero, ron havana)</div>
                             </li>
                             <li>
-                                <div id="nombre">Frambuesa</div>
-                                <div id="precio">$1200,00</div>
+                                <div id="nombre">Jagger boom</div>
+                                <div id="precio">$2800,00</div>
                             </li>
                             <li>
-                                <div id="nombre">Stout</div>
-                                <div id="precio">$1200,00</div>
+                                <div id="descripcion">(Jagger speed, rodajas de pepino y limon)</div>
                             </li>
-                            <div id="borde">
-                            </div>
-                            <h4>Crafter</h4>
                             <li>
-                                <div id="nombre">Og kush</div>
-                                <div id="precio">$1300,00</div>
+                                <div id="nombre">Samples</div>
+                                <div id="precio">$1500,00</div>
+                            </li>
+                            <li>
+                                <div id="descripcion">(vodka de anana, gin, tonica)</div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <footer class="footer" id="lugarFooter">
-                    <div id="fratelliLogo">
+            </section>
+            <footer class="footer" id="lugarFooter">
+                <div id="fratelliLogo">
+                    <div>
                         <img id="imagenFratelli" src="/img/logo fratelli.png">
                     </div>
-                </footer>
-            </body>
-            <script>
-                function abrirMenu(){
-                    let checkbox = document.getElementById('btn-menu');
-                    let label = document.querySelector('label[for="btn-menu"]');
-                    let logo = document.getElementById('fratelliLogo');
-        
-                    if(!checkbox.checked){
-                        label.style.opacity = '0';
-                        logo.style.opacity = '0.5';
-                        document.body.style.overflow = "hidden";
-        
-                    }else{
-                        label.style.opacity = '1'
-                        logo.style.opacity = '1'
-                        document.body.style.overflow = "auto";
-        
-                    }
-        
-                    console.log('funca');
+                </div>
+            </footer>
+        </body>
+        <script>
+            function abrirMenu(){
+                let checkbox = document.getElementById('btn-menu');
+                let label = document.querySelector('label[for="btn-menu"]');
+                let logo = document.getElementById('fratelliLogo');
+    
+                if(!checkbox.checked){
+                    label.style.opacity = '0';
+                    logo.style.opacity = '0.5';
+                    document.body.style.overflow = "hidden";
+    
+                }else{
+                    label.style.opacity = '1'
+                    logo.style.opacity = '1'
+                    document.body.style.overflow = "auto";
+    
                 }
-            </script>
-        </html>
+    
+                console.log('funca');
+            }
+        </script>
+    </html>
