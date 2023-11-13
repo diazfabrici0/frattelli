@@ -1,1 +1,0 @@
-# Carta Virtual de la Birreria Fratteli, ubicada en General Fernandez Oro, provincia de Rio Negro.
